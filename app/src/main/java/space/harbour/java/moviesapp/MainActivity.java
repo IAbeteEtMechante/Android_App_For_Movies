@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     String s1[];
     String s2[];
-    int images[] = {R.drawable.c_plus_plus, R.drawable.c_sharp,R.drawable.c_plus_plus,
-            R.drawable.c_sharp,R.drawable.c_plus_plus, R.drawable.c_sharp, R.drawable.c_sharp};
+    int images[] = {R.drawable.pulfiction, R.drawable.titanic,R.drawable.fightclub,
+            R.drawable.inglorious,R.drawable.gonewiththewind, R.drawable.notanothernteenmovie, R.drawable.americanpie};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +34,14 @@ public class MainActivity extends AppCompatActivity {
 //        s2 = getResources().getStringArray(R.array.description);
 
 //        try {
-//            new MyAsyncTask("https://api.npoint.io/f500fe055fb5e9469bc7", recyclerView).execute();
+//            myAsyncTask = new MyAsyncTask("https://api.npoint.io/f500fe055fb5e9469bc7",
+//            recyclerView).execute();
+
 //        } catch (MalformedURLException e) {
 //            e.printStackTrace();
 //        }
 
-        s1 = getResources().getStringArray(R.array.programming_languages);
+        s1 = getResources().getStringArray(R.array.movies);
         s2 = getResources().getStringArray(R.array.description);
 
         AdapterActivity myAdapter = new AdapterActivity(this, s1, s2, images);
