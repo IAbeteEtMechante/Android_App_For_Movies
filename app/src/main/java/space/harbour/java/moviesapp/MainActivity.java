@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,5 +21,13 @@ public class MainActivity extends AppCompatActivity {
         TextView textUp = findViewById(R.id.textView3);
         textUp.setText("Ahmed is awake");
         ((ImageView)findViewById(R.id.imageView3)).setImageResource(R.drawable.pulfiction);
+
+        String message = "Hello toast!";
+        Toast toast = Toast.makeText(this,
+                message, Toast.LENGTH_LONG);
+        toast.show();
+
     }
+
+
 }
