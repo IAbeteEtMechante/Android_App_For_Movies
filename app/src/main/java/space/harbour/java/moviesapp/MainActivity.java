@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     String s1[];
     String s2[];
+    String s3[];
+    String s4[];
     int images[] = {R.drawable.pulfiction, R.drawable.titanic,R.drawable.fightclub,
             R.drawable.inglorious,R.drawable.gonewiththewind, R.drawable.notanothernteenmovie, R.drawable.americanpie};
 
@@ -43,8 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
         s1 = getResources().getStringArray(R.array.movies);
         s2 = getResources().getStringArray(R.array.description);
+        s3 = getResources().getStringArray(R.array.year);
+        s4 = getResources().getStringArray(R.array.duration);
 
-        AdapterActivity myAdapter = new AdapterActivity(this, s1, s2, images);
+        AdapterActivity myAdapter = new AdapterActivity(this, s1, s2, s3, s4, images);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
