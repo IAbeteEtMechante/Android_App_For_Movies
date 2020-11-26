@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MoviesApp</string>
     <string name="text_fun">hahaha</string>
-    <string-array name="programming_languages">
+    <string-array name="movies">
         <item>Pulp fiction</item>
         <item>Titanic</item>
         <item>Fight Club</item>
